@@ -13,5 +13,7 @@ Route::group([
 
     $router->get('/', 'HomeController@index')->name('home');
     $router->resource('users', UserController::class);
+    $router->resource('beneficiarios', BeneficiarioController::class);
+    $router->resource('socios', SocioController::class);
 
 });
